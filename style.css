@@ -1,0 +1,189 @@
+body {
+    background-color: black;
+    z-index: 1;
+    transition: 1s;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 1550px;
+    height: auto;
+    opacity: 1;
+    z-index: -1;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+
+ul {
+    position: fixed;
+    z-index: 1;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    width: 1500px;
+    height: 65px;
+    border-radius: 15px;
+    background-color: #310e68;
+    background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
+    transform: translate(-3.5px,-30px);
+}
+
+#Nav_Title {
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    margin: 0;
+    margin: 14px 25px;
+    float: right;
+    color: white;
+    display: inline;
+    cursor: pointer;
+    transition: 1s;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    scroll-behavior: smooth
+}
+
+#Nav_Title:hover {
+    transform: rotate(360deg);
+}
+
+li {
+    font-family: 'Rajdhani', sans-serif;
+    display: block;
+    color: white;
+    text-align: center;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    transition-duration: 0.5s;
+    float: left;
+    width: max-content;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    /* Use padding to get space and use margin to constrict the area to their elements size */
+}
+
+li:hover {
+    cursor: pointer;
+    border: solid 1px white;
+    border-radius: 12px;
+    background-color: white;
+    color: rgb(95, 15, 64) !important;
+    transform: matrix(1.2, 0, 0, 1.2, 0, 10);
+    box-shadow: 0 -7px 30px white;
+}
+
+#icon {
+    font-family: 'Rajdhani', sans-serif;
+    display: block;
+    color: white;
+    font-size: 20px;
+    transition-duration: 0.5s;
+}
+#icon:hover{
+    color: rgb(95, 15, 64) !important;
+}
+
+#A {
+    transition: 0.5s;
+}
+#A:hover{
+    color: rgb(95, 15, 64) !important;
+}
+
+#home {
+    position: static;
+    z-index: 1;
+}
+
+#heading {
+    transition: 1s;
+    font-size: 58px;
+    color: white;
+    z-index: 1;
+    position: static;
+    font-family: 'Poppins', sans-serif;
+    transform: translate(100px, 100px);
+}
+
+#about {
+    padding: 20px;
+    border: solid white 2px;
+    width: 700px;
+    transition: 1s;
+    position: static;
+    z-index: 1;
+    font-family: 'Roboto', sans-serif;
+    transform: translate(100px, 120px);
+    font-size: 28px;
+    background-color: white;
+    color: rgb(95, 15, 64);
+    border-radius: 10px;
+}
+
+#about:hover {
+    border-radius: 50px;
+}
+
+@keyframes lol {
+    from {
+        transform: translate(4000px, -650px);
+        scale: 0.7;
+    }
+
+    to {
+        transform: translate(1450px, -650px);
+        scale: 0.7;
+    }
+}
+
+#home_pic {
+    position: static;
+    transition: 0.5s;
+    z-index: 2;
+    scale: 0.7;
+    animation-name: lol;
+    animation-duration: 3s;
+    transform: translate(1450px, -650px);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#home_pic:hover {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    scale: 0.8;
+    transform: translate(1255px, -550px);
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
