@@ -1,0 +1,427 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    background-color: black;
+    z-index: 1;
+    transition: 1s;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 1550px;
+    height: auto;
+    opacity: 1;
+    z-index: -1;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+
+ul {
+    position: fixed;
+    z-index: 1;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    width: -webkit-fill-available;
+    height: 65px;
+    border-radius: 15px;
+    background-color: #310e68;
+    background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
+    transform: translate(-5.5px,-40px);
+    border-radius: 0px;
+}
+
+#Nav_Title {
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    margin: 0;
+    margin: 14px 25px;
+    float: right;
+    color: white;
+    display: inline;
+    cursor: pointer;
+    transition: 1s;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    scroll-behavior: smooth
+}
+
+#Nav_Title:hover {
+    transform: rotate(360deg);
+}
+
+li {
+    font-family: 'Rajdhani', sans-serif;
+    display: block;
+    color: white;
+    text-align: center;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    transition-duration: 0.5s;
+    float: left;
+    width: max-content;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    /* Use padding to get space and use margin to constrict the area to their elements size */
+}
+
+li:hover {
+    cursor: pointer;
+    border: solid 1px white;
+    border-radius: 12px;
+    background-color: white;
+    color: rgb(95, 15, 64) !important;
+    transform: matrix(1.2, 0, 0, 1.2, 0, 10);
+    box-shadow: 0 -7px 30px white;
+}
+
+#icon {
+    font-family: 'Rajdhani', sans-serif;
+    display: block;
+    color: white;
+    font-size: 20px;
+    transition-duration: 0.5s;
+}
+#icon:hover{
+    color: rgb(95, 15, 64) !important;
+}
+
+.A {
+    transition: 0.5s;
+}
+.A:hover{
+    color: rgb(95, 15, 64) !important;
+}
+
+#home {
+    position: static;
+    z-index: 1;
+    height: 600px;
+}
+
+.heading {
+    font-size: 58px;
+    color: white;
+    z-index: 1;
+    position: static;
+    font-family: 'Poppins', sans-serif;
+    transform: translate(100px, 100px);
+}
+
+#about {
+    padding: 20px;
+    border: solid white 2px;
+    width: 700px;
+    transition: 1s;
+    position: static;
+    z-index: 1;
+    font-family: 'Roboto', sans-serif;
+    transform: translate(100px, 120px);
+    font-size: 28px;
+    background-color: white;
+    color: rgb(95, 15, 64);
+    border-radius: 10px;
+}
+
+#about:hover {
+    border-radius: 50px;
+}
+
+@keyframes lol {
+    from {
+        transform: translate(4000px, -650px);
+        scale: 0.7;
+    }
+
+    to {
+        transform: translate(1450px, -650px);   
+        scale: 0.7;
+    }
+}
+
+#home_pic {
+    position: static;
+    transition: 0.5s linear;
+    z-index: 2;
+    scale: 0.7;
+    animation-name: lol;
+    animation-duration: 3s;
+    transform: translate(1450px, -650px);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#home_pic:hover {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    scale: 0.8;
+    transform: translate(1250px, -575px);
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.reveal{
+    z-index: 0 !important;
+    position: relative;
+    transform: translateY(250px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+  
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+#journey_para{
+    padding: 20px;
+    border: solid white 2px;
+    width: 600px;
+    transition: 1s;
+    position: static;
+    z-index: 1;
+    font-family: 'Maven Pro', sans-serif;
+    transform: translate(100px, 120px);
+    font-size: 25px;
+    background-color: white;
+    color: rgb(95, 15, 64);
+    border-radius: 10px;
+}
+.vr{
+    position:absolute;
+    z-index: 0;
+    width:10px;
+    height:55px;
+    background-color: white;
+    transform: translate(50px,-7px);
+}
+#divider{
+    position: fixed;
+    z-index: 1;
+    width:5px;
+    height:500px;
+    background-color: white;
+    transform: translate(750px,120px);
+}
+#Gurdaspur{
+    transform: translate(765px,-273px);
+    border-radius: 10px;
+}
+#back_cover{
+    padding: 20px;
+    border: solid white 2px;
+    width: 1222px;
+    height:968px;
+    transition: 1s;
+    position: fixed;
+    z-index: 0;
+    transform: translate(100px, 120px);
+    background-color: rgba(0, 0, 0, 0);
+    filter: blur(100px);
+    -webkit-filter: blur(100px);
+}
+#ap4{
+    position: fixed;
+    z-index: 0;
+    width:643px;
+    transform: translate(100px,115px);
+    border-radius: 10px;
+}
+#journey_para2{
+    padding: 20px;
+    border: solid white 2px;
+    width: 556px;
+    transition: 1s;
+    position: static;
+    z-index: 1;
+    font-family: 'Maven Pro', sans-serif;
+    transform: translate(765px, -283px);
+    font-size: 25px;
+    background-color: white;
+    color: rgb(95, 15, 64);
+    border-radius: 10px;
+}
+#arrogant{
+    transform: translate(765px,-283px);
+    width:600px;
+    border-radius: 10px;
+}
+#journey{
+    height:1350px;
+}
+.block{
+    display:inline-block;
+    margin-right:50px;
+}
+.liveVideo{
+    width:410px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: 0.5s;
+}
+.liveVideo:hover{
+    scale:1.2;
+    border-radius: 10px;
+    transform: translate(0px,20px);
+}
+.container{
+    margin-left:95px;
+    margin-top: 225px;
+}
+.liveText{
+    background-color: white;
+    text-align: center;
+    height:75px;
+    padding-top: 37.5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 30px;
+    color: rgb(95, 15, 64);
+    font-family: 'Maven Pro', sans-serif;
+}
+#above{
+    border-radius: 20px;
+    width:1325px;
+    height:5px;
+    background-color: white;
+    position: fixed;
+    text-align: center;
+    transform: translate(100px,150px);
+}
+/* Slideshow container */
+.slideshow-container {
+    width: 450px;
+    height:450px;
+    position: relative;
+    margin: auto;
+
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    color:rgba(0,0,0,0.8);
+    background-color: white;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color:white;
+    color:rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.8);
+    color:white;
+  }
+  
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    
+  }
+  
+  .lol, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* @keyframes fade {
+    from {
+        transform: rotate(360deg)
+    } 
+    to {
+        transform: rotate(0deg)
+    } 
+  } */
+  .fade {
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+  
+
+  #slideshow{
+    transform: translate(367px,120px);
+  }
+  .text{
+    width:700px;
+    height:409px;
+    padding: 20px;
+    border: solid white 2px;
+    transition: 1s;
+    position: static;
+    z-index: 1;
+    font-family: 'Maven Pro', sans-serif;
+    transform: translate(-768px, -456px);
+    font-size: 25px;
+    background-color: white;
+    color: rgb(95, 15, 64);
+    border-radius: 0px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+.slideImage{
+    border:1px rgba(255, 255, 255, 0);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
