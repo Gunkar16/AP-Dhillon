@@ -10,38 +10,153 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&family=Poppins&family=Rajdhani:wght@500&family=Roboto&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Maven+Pro:wght@500&family=Pacifico&family=Poppins&family=Rajdhani:wght@500&family=Roboto&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
 
+</head>
+<!-- lol -->
 <body>
     <video autoplay muted loop id="myVideo">
         <source src="background.mp4" type="video/mp4">
     </video>
     <ul>
         <h2 id="Nav_Title">
-            <a  target="_blank" href="https://en.wikipedia.org/wiki/AP_Dhillon">AP Dhillon</a>
+            <a target="_blank" href="https://en.wikipedia.org/wiki/AP_Dhillon">AP Dhillon</a>
         </h2>
-        <li id="A" href="#home"><a id="A"href="#home"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+        <li id="A"><a class="A" href="#home"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
         </li>
-        <li id="J">Journey</li>
-        <li id="Ac">Achievements</li>
-        <li id="C">Collaborations</li>
+        <li id="J"><a class="A" href="#lol">Journey</a></li>
+        <li id="Ac"><a class="A" href="#lol2">Live Events</a></li>
+        <li id="C"><a class="A" href="#lol3">Collaborations</a></li>
         <li id="C">Music Style</li>
         <li id="S">Songs</li>
         <li id="M">My views</li>
     </ul>
+
     <div id="home">
-        <h1 id="heading">AP Dhillon</h1>
+        <h1 class="heading">AP Dhillon</h1>
+        <div class="vr"></div>
         <p id="about">AP Dhillon or Amritpal Singh Dhillon is an Indian-Canadian singer, songwriter, and music producer.
             Born and raised in
             Punjab, India, Dhillon moved to Canada at a young age and embarked on a successful music career that has
             garnered him a massive following worldwide. His unique blend of Punjabi folk and modern hip-hop influences
             has made him a rising star in the music industry.</p>
+
         <img id="home_pic" src="ap5.png">
     </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>aa
+    <div id="lol"></div>
+    <div id="journey" class="reveal">
+        <h1 class="heading">Journey</h1>
+        <div class="vr"></div>
+        <!-- <div id="divider"></div> -->
+        <div id="back_cover"></div>
+
+        <p id="journey_para">AP Dhillon was born into a Sikh family on 10 January 1993 in Gurdaspur, Punjab,
+            India. He studied from the Little Flower Convent School and completed his graduation in civil
+            engineering
+            from Baba Kuma Singh Ji Engineering College, Hoshiar Nagar affiliated under Punjab Technical University
+            in
+            Amritsar. Dhillon pursued a diploma in business administration and management from Camosun College in
+            British Columbia. He has since been based in Victoria while working for Run-Up Records.
+        </p>
+
+        <img id="ap4" src="ap4.jpg" alt="" srcset="">
+
+        <iframe id="Gurdaspur"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22587.61549020846!2d75.38903499948852!3d32.04218702237687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b926db4af6e6d%3A0x2fda9aabada0f98b!2sGurdaspur%2C%20Punjab%20143521!5e0!3m2!1sen!2sin!4v1687241479735!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <p id="journey_para2">At a young age, Dhillon moved to Canada with his family, seeking better opportunities and
+            a new beginning. It was during this transition that he discovered his passion for music and decided to
+            pursue it as a career. Determined to make his mark in the music industry, Dhillon embarked on a journey of
+            self-discovery and honing his craft.
+        </p>
+
+        <video autoplay muted loop id="arrogant">
+            <source src="Arrogant.mp4" type="video/mp4">
+        </video>
+
+    </div>
+    <div id="lol2"></div>
+    <div id="achievements" class="reveal">
+        <h1 class="heading">Live Events</h1>
+        <div class="vr"></div>
+        <hr id="above">
+        <div class="container">
+
+            <div class="block">
+
+                <video onmouseover="pla(this)" onmouseleave="paus(this)" class="liveVideo" muted loop>
+                    <source type="video/mp4"
+                        src="Ap Dhillon Mumbai Concert _ Take Over Tour_ Gurinder Gill _ Shinda kahlon _ BROWN MUNDE (online-video-cutter.com).mp4">
+                </video>
+
+                <div class="liveText">AP Dhillon at <b>Mumbai</b></div>
+            </div>
+
+            <div class="block">
+
+                <video onmouseover="pla(this)" onmouseleave="paus(this)" class="liveVideo" muted loop>
+                    <source type="video/mp4" src="AP Dhillon - 'Summer High' - The 2023 JUNO Awards.mp4">
+                </video>
+
+                <div class="liveText">AP Dhillon at <b>Canada</b></div>
+            </div>
+
+            <div class="block">
+
+                <video onmouseover="pla(this)" onmouseleave="paus(this)" class="liveVideo" muted loop>
+                    <source type="video/mp4"
+                        src="AP Dhillon Concert Highlights - GOA _ The Takeover Tour _ Gurinder Gill _ Shinda Kahlon _BROWN MUNDE (online-video-cutter.com).mp4">
+                </video>
+
+                <div class="liveText">AP Dhillon at <b>Goa</b></div>
+            </div>
+        </div>
+    </div>
+    <div id="lol3"></div>
+    <div id="collaborations" class="reveal">
+        <h1 class="heading">Collaborations</h1>
+        <div class="vr"></div>
+
+        <div id="slideshow">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="Shinda.jpg" class="slideImage" style="width:100%">
+                    <div class="text">Caption Text</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="Gurinder.png" class="slideImage" style="width:100%">
+                    <div class="text">Caption Two</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="Gminxr.jpeg" class="slideImage" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot lol" onclick="currentSlide(1)"></span>
+                <span class="dot lol" onclick="currentSlide(2)"></span>
+                <span class="dot lol" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </div>
+
     <script src="main.js"></script>
 </body>
+
 </html>
