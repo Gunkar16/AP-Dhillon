@@ -14,6 +14,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 
 <body>
@@ -29,11 +31,36 @@
         <li id="J"><a class="A" href="#lol">Journey</a></li>
         <li id="Ac"><a class="A" href="#lol2">Live Events</a></li>
         <li id="C"><a class="A" href="#lol3">Collaborations</a></li>
-        <li id="C">Music Style</li>
-        <li id="S">Songs</li>
-        <li id="M">My views</li>
+        <li id="M"><a class="A" href="#lol4">Music</a></li>
+        <li id="Mv"><a class="A" href="#lol5">My views</a></li>
     </ul>
-
+    <audio id="song1">
+        <source src="BrownMunde.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="song2">
+        <source src="Excuses.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="song3">
+        <source src="Arrogant.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="song4">
+        <source src="Toxic.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="song5">
+        <source src="SummerHigh.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="song6">
+        <source src="Insane.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="song7">
+        <source src="MajheAale.mp3" type="audio/mpeg">
+    </audio>
+    <div id="track">
+        <h2 id="songName">Brown Munde</h2>
+        <i class="fas fa-backward iconsss" onclick="previousSong()" id="rewindButton"></i>
+        <i class="fas fa-play iconsss" onclick="playSong()" id="playButton"></i>
+        <i class="fas fa-forward iconsss" onclick="nextSong()" id="NextButton"></i>
+    </div>
     <div id="home">
         <h1 class="heading">AP Dhillon</h1>
         <div class="vr"></div>
@@ -155,13 +182,13 @@
                 <div class="mySlides fade">
                     <div class="numbertext">3 / 3</div>
                     <img src="Gminxr.jpeg" class="slideImage" style="width:100%">
-                    <div class="text">he collaboration between AP Dhillon and Gminxr brought together their talents to
+                    <div class="text">The collaboration between AP Dhillon and Gminxr brought together their talents to
                         create captivating music. With their combined skills and creative energies, they crafted a
                         unique musical experience that resonated with audiences. The synergy between AP Dhillon's
                         distinct style and Gminxr's artistic contributions resulted in memorable tracks that showcased
                         their shared passion for music and their ability to push boundaries. Their collaboration
                         represents a dynamic fusion of their individual talents, leaving a lasting impact on the music
-                        scene</div>
+                        scene.</div>
                 </div>
 
                 <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -177,8 +204,56 @@
             </div>
         </div>
     </div>
+    <div id="lol4"></div>
+    <div id="music" class="reveal">
+        <h1 class="heading">Music</h1>
+        <div class="vr"></div>
+        <div id="container2">
+            <div id="holder1">
+                <div id="brown" onclick="BrownMunde()">
+                    <span id="BrownMundeText" class="T">Brown Munde</span>
+                </div>
+            </div>
+            <div id="holder2">
+                <div id="excuses" onclick="Excuses()">
+                    <span id="ExcusesText" class="T te">Excuses</span>
+                </div>
 
-    <script src="main.js"></script>
+            </div>
+            <div id="holder3">
+                <div id="summer" onclick="Summer()">
+                    <span id="SummerText" class="T tex">Summer High</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="lol5"></div>
+    <div id="myViews" class="reveal">
+        <h1 class="heading mV">My views</h1>
+
+        <img src="Gunkar.jpg" id="pic" alt="">
+        <!-- <hr id="line"> -->
+        <!-- <div class="triangle-up"></div> -->
+        <div class="rectangle">"AP Dhillon has swiftly captured a special place in my heart, and his music resonates
+            deeply not just with me but also with all of my friends. Whenever the familiar tunes of Excuses or Brown
+            Munde fill the air, it's as if a magical spell takes over, and everyone around starts singing and swaying in
+            sync. While AP Dhillon deserves immense credit for his talents, it's important to acknowledge the incredible
+            contributions of his partners, Shinda Kahlon and Gurinder Gill, who are the true superstars behind the
+            captivating beats of his music. Together, these three artists represent the bright future of the Punjabi
+            hip-hop industry. Let's unite in our support for them and embrace the musical journey they are embarking
+            upon."
+
+        </div>
+    </div>
+</body>
+<footer>
+    <h1 class="heading thanks">Thankyou</h1>
+    <h2 class="heading by">- By Gunkar16</h2>
+</footer>
+
+<script src="main.js"></script>
 </body>
 
 </html>
